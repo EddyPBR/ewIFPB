@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Semana de Empreendedorismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- styles -->
+    <link type="text/css" rel="stylesheet" href="./css/bulma.css" />
+    <link type="text/css" rel="stylesheet" href="./css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="#header" class="arrowToMenu"><img src="./images/home.png"/></a>
+  <header class="hero is-fullheight header-background" id="header">
+    <!-- menu -->
+    <nav class="navbar is-transparent wow fadeInDown" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://www.ifpb.edu.br/campinagrande" target="_blank">
+            <img src="./images/logo-IFPB.png" width="140">
+          </a>
+          <!-- toggle button -->
+          <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false" data-target="menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="menu" class="navbar-menu">
+          <div class="navbar-start"><!-- empty --></div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="navbar-item" href="#about">
+                  <span class="nav-link">Sobre</span>
+                </a>
+                <a class="navbar-item" href="#agenda">
+                    <span class="nav-link">Agenda</span>
+                </a>
+                <a class="navbar-item" href="#organization">
+                    <span class="nav-link">Organização</span>
+                </a>
+                <a class="navbar-item" href="#ticket">
+                    <span class="nav-link">Ingressos</span>
+                </a>
+                <a class="navbar-item" href="#location">
+                    <span class="nav-link">Local</span>
+                </a>
+                <a class="navbar-item" href="#contact">
+                    <span class="nav-link">Contato</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <h1 class="has-text-white has-text-centered is-typewriter is-size-3 is-size-2-desktop">
+              Maratona de Empreendedorismo e Inovação - 2019
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero is-large" id="about">
+    <div class="container" style="padding-top: 60px; padding-bottom: 40px;">
+      <h2 class="title has-text-centered wow fadeInUpBig">Ut fermentum dui non dapibus</h2>
+      <h5 class="subtitle has-text-centered wow fadeInUpBig">felis turpis venenatis elit, ac faucibus tellus lorem at arcu.</h5>
+      <div class="columns is-centered">
+        <div class="column is-4 wow fadeInLeft">
+          <p class="has-text-centered">
+            <img src="./images/customer-service-woman.svg" width="350px"/>
+          </p>
+          <p class="has-text-centered">
+            Ut fermentum, dui non dapibus consequat, felis turpis venenatis elit, ac faucibus tellus lorem at arcu. Maecenas at egestas libero, viverra ullamcorper massa.
+          </p>
+        </div>
+        <div class="column is-2"><!-- its a empty column --></div>
+        <div class="column is-4  wow fadeInRight">
+          <p class="has-text-centered">
+            <img src="./images/monitor-cash-credit-card.svg" width="350px"/>
+          </p>
+          <p class="has-text-centered">
+            Ut fermentum, dui non dapibus consequat, felis turpis venenatis elit, ac faucibus tellus lorem at arcu. Maecenas at egestas libero, viverra ullamcorper massa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero is-fullheight is-agenda-container" id="agenda">
+    <div class="container" style="margin-top: 50px;">
+      <h1 class="has-text-centered has-text-white is-size-2 wow fadeInUp">agenda do evento</h1>
+      <!-- sub-menu for date of events -->
+      <div class="hero-head" style="margin-top: 60px;">
+        <nav class="tabs is-boxed is-radiusless">
+          <div class="container">
+            <ul id="agenda-date">
+              <li class="wow fadeInLeft">
+                <a class="is-sub-menu is-agenda-link is-agenda-active" onclick="activeDate(0)">Sex, 16/08</a>
+              </li>
+              <li>
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(1)">Sab, 17/08</a>
+              </li>
+              <li>
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(2)">Dom, 18/08</a>
+              </li>
+              <li>
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(3)">Seg, 19/08</a>
+              </li>
+              <li>
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(4)">Ter, 20/08</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- content of sub-menu -->
+      <div class="box is-radiusless wow fadeInUp" id="event-content" style="margin-bottom: 80px;">
+        <div class="">
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">18:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">19:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">20:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">21:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">21:30</b></p>
+          </a>
+        </div>
+
+        <div class="is-hidden">
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">18:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">19:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">20:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">21:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">21:30</b></p>
+          </a>
+        </div>
+
+        <div class="is-hidden">
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">18:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">19:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">20:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">21:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">21:30</b></p>
+          </a>
+        </div>
+
+        <div class="is-hidden">
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">18:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">19:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">20:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">21:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">21:30</b></p>
+          </a>
+        </div>
+
+        <div class="is-hidden">
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">18:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">19:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">20:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">21:00</b></p>
+          </a>
+          <a class="panel-block">
+            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">21:30</b></p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero is-large" id="organization">
+    <div class="container" style="margin-top: 30px; margin-bottom: 80px;">
+      <h1 class="has-text-dark has-text-centered is-size-2 wow fadeInUpBig">Organização</h1>
+      <h3 class="has-text-centered wow fadeInUpBig has-text-justified-mobile" style="padding-left: 10px; padding-right: 10px; padding-top: 10px;">Organizado pelo Instituto Federal de Ciência e Tecnologia da Paraíba - Campus Campina grande. Junto a Cordenação de Administração, contamos com a participação de graduandos, mestres, doutores e especialistas das mais diversas areas, conheça a equipe que torna este evento possível</h3>
+
+      <div id="organization-profiles">
+        <div class="columns wow fadeIn is-mobile profile-content" style="margin-top: 60px;">
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+        </div>
+        <div class="columns wow fadeIn is-mobile profile-content">
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+          <div class="column is-3">
+            <p class="has-text-centered"><img src="./images/selfie-01.jpg" class="is-image-profile" /></p>
+            <p class="has-text-centered">Fulana de Tal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero is-fullheight ticket-background" id="ticket">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8 wow zoomInDown">
+            <h2 class="has-text-centered has-text-white title" style="padding-bottom: 10px;">Então, o que voce está esperando?</h2>
+            <p class="has-text-centered has-text-white subtitle has-text-justified-mobile">
+              Adquira já seu ingresso para o evento, é totalmente gratuíto, aproveite e escolha uma das nossas palestras e mini-cursos que gostaria de participar.
+            </p>
+            <p class="has-text-centered" style="padding-top: 20px;">
+              <button class="button button-participate is-pulse">Adquira seu Ingresso!</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero is-large has-background-white" id="location">
+    <div class="container" style="margin-bottom: 20px;">
+      <h1 class="has-text-centered is-size-2" style="padding-top: 40px; padding-bottom: 40px;">Fique por dentro do evento</h1>
+      <div class="columns is-centered">
+        <div class="column is-6 wow fadeIn">
+            <iframe style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.014985912432!2d-35.91875670203007!3d-7.239128825808512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aea0a86bb44fa3%3A0x242ebf4e25b21d44!2sIfpb!5e0!3m2!1spt-BR!2sbr!4v1565924191934!5m2!1spt-BR!2sbr" width="1000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="column is-2"><!-- empty--></div>
+        <div class="column is-4 fadeIn">
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=1868994283135567&autoLogAppEvents=1"></script>
+          <div class="fb-page" data-href="https://www.facebook.com/ifpb.campina/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ifpb.campina/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ifpb.campina/">IFPB</a></blockquote></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="hero is-fullheight contact-background" id="contact" style="margin-top: 80px;">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-7 has-text-white wow fadeInLeft" style="margin-top: 50px;">
+            <h2 class="is-size-2">Contato</h2>
+            <p>Dúvidas, Problemas ou sugestões? <b><a href="mailto:username@domainname" target="_blank" class="has-text-light" style="text-decoration: underline;">Fale Conosco!</a></b></p>
+
+            <h2 class="is-size-2" style="margin-top: 20px;">Telefones</h2>
+            <p>(83)9999-9999</p>
+            <p>(83)9999-9999</p>
+
+            <h2 class="is-size-2" style="margin-top: 20px;">E-Mail</h2>
+            <p><b><a href="mailto:username@domainname" target="_blank" class="has-text-light">Emaildecontato@contato.com</a></b></p>
+            <p><b><a href="mailto:username@domainname" target="_blank" class="has-text-light">Emaildecontato@contato.com</a></b></p>
+          </div>
+          <div class="column is-5  wow fadeInRight">
+            <img src="./images/logo-ADM.png" style="opacity: .7;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="columns" style="margin: 0px">
+      <div class="column has-text-centered">
+        <p class="has-text-white">COPYRIGHT <a href="https://www.ifpb.edu.br/campinagrande" target="_blank" class="has-text-white">IFPB-CG.GOV</a> &copy;2019 | Todos os Direitos Reservados</p>
+      </div>
+
+      <div class="column has-text-centered">
+        <p class="has-text-white">criado por:  <a class="has-text-white" href="https://www.linkedin.com/in/edvaldo-junior-69a232158/" target="_blank">Edvaldo Junior</a> & <a href="https://www.linkedin.com/in/wanderson-hermirio-dos-santos-395005152/" target="_blank" class="has-text-white">Wanderson Hermírio</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<!-- scripts -->
+<script type="text/javascript" src="./javascript/jquery.js"></script>
+<script type="text/javascript" src="./javascript/wow.js"></script>
+<script type="text/javascript" src="./javascript/typewriter.js"></script>
+<script type="text/javascript" src="./javascript/agenda.js"></script>
+<script type="text/javascript" src="./javascript/scroll.js"></script>
+<script>new WOW().init();</script>
+
+</html>

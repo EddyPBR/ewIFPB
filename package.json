@@ -1,0 +1,25 @@
+{
+  "name": "ewifpb",
+  "version": "1.0.0",
+  "description": "entrepreneurship week - IFPB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyPBR/ewIFPB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddyPBR/ewIFPB/issues"
+  },
+  "homepage": "https://github.com/EddyPBR/ewIFPB#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bulma": "^0.7.5",
+    "jquery": "^3.4.1",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,217 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.header-background {
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/header-background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header-background {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/header-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 75%, 29%;
+    background-size: cover;
+    height: 100%;
+  }
+}
+
+.navbar-item a {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-item a:hover {
+  color: rgb(150, 150, 150);
+}
+
+/* typewriter effect */
+.is-typewritter {
+}
+
+.is-typewriter::after {
+  content: '|';
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* end typewriter */
+
+.is-sub-menu {
+  padding-top: 10px !important; 
+  padding-bottom: 10px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.is-sub-menu-content {
+  padding-top: 10px !important; 
+  padding-bottom: 10px !important;
+}
+
+.is-agenda-container {
+  background-color: rgb(142, 68, 238);
+  margin-top: 50px;
+}
+
+.is-hour { 
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 921px) {
+  .is-agenda-container {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  .is-sub-menu {
+    padding-top: 10px !important; 
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+.is-agenda-link{
+  color: white !important;
+}
+
+.is-agenda-link:hover{
+  color: rgb(142, 68, 238) !important;
+}
+
+.is-agenda-active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(142, 68, 238) !important;
+}
+
+.ticket-background {
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/ticket-background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100%;
+}
+
+.button-participate {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.button-participate:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(142, 68, 238);
+  font-weight: 500;
+  border-color: white !important;
+}
+
+.is-image-profile {
+  border-radius: 50%;
+  width: 128px;
+}
+
+.profile-content {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.contact-background {
+  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/lampada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* some effects */
+.is-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+      border: 1px solid;
+  }
+  25% {
+      border: 1px solid;
+      box-shadow: 0px 0px 0px 2px rgb(255, 255, 255, .6);
+  }
+  75% {
+      border: 1px solid;
+      box-shadow: 0px 0px 0px 10px rgb(255, 255, 255, .2);
+  }
+  90%{
+      border: 1px solid;
+      box-shadow: 0px 0px 0px 10px rgb(255, 255, 255, .1);
+  }
+  100% {
+      border: 1px solid;
+      box-shadow: 0px 0px 0px 15px rgb(255, 255, 255, 0);
+  }
+}
+
+/* teste */
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: .5s;
+}
+
+.nav-link::after {
+  display: block;
+  position: relative;
+  content: '';
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .3s;
+  margin: auto;
+}
+
+.nav-link:hover {
+  color: white !important;
+  text-shadow: 1px 1px 4px  rgba(255, 255, 255, .4);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.arrowToMenu {
+  height: 60px;
+  width: 60px; 
+  position: fixed;
+  background-color: rgba(0, 0, 0, .3);
+  bottom: 25px;
+  right: 25px;
+  z-index: 1;
+  display: none;
+  border-radius: 50%;
+}
+
+.arrowToMenu img {
+  padding: 12px;
+}
