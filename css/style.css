@@ -2,7 +2,7 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 .header-background {
-  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/header-background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2),rgba(0,0,0,.1)), url('../images/header-background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,15 +10,9 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .header-background {
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/header-background.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 75%, 29%;
-    background-size: cover;
-    height: 100%;
-  }
+.has-background-banner {
+  background-color: rgba(63, 171, 174, .0);
+  /*background-color: rgba(0,0,0,.15);*/
 }
 
 .navbar-item a {
@@ -27,6 +21,10 @@ body {
 
 .navbar-item a:hover {
   color: rgb(150, 150, 150);
+}
+
+.navbar-item::selection {
+  background: none;
 }
 
 /* typewriter effect */
@@ -94,12 +92,23 @@ body {
 }
 
 .ticket-background {
-  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/ticket-background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5), rgba(0,0,0,.2)), url('../images/ticket-background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .ticket-background {
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5), rgba(0,0,0,.2)), url('../images/ticket-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top, 73%;
+    background-size: cover;
+    height: 100%;
+  }
 }
 
 .button-participate {
@@ -174,8 +183,9 @@ body {
 
 /* teste */
 .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   transition: .5s;
+  text-shadow: 0px 0px 10px  rgba(255, 255, 255, .9);
 }
 
 .nav-link::after {
@@ -214,4 +224,17 @@ body {
 
 .arrowToMenu img {
   padding: 12px;
+}
+
+.navbar-organization {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 768px){
+  .navbar-organization {
+    display: inline-block;
+  }
+  .nav-link-transparent{
+    background-color: rgba(0,0,0,0) !important;
+  }
 }

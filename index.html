@@ -32,16 +32,49 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div id="menu" class="navbar-menu">
+        <div id="menu" class="navbar-menu has-background-banner">
           <div class="navbar-start"><!-- empty --></div>
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="buttons">
-                <a class="navbar-item" href="#about">
+              <div class="buttons is-centered">
+                <ul class="navbar-organization">
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#about">
+                      <span class="nav-link">Sobre</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#agenda">
+                      <span class="nav-link">Cronograma</span>
+                  </a>
+                  </li>
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#organization">
+                      <span class="nav-link">Organização</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#ticket">
+                      <span class="nav-link">Ingressos</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#location">
+                      <span class="nav-link">Local</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#contact">
+                      <span class="nav-link">Contato</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- <a class="navbar-item" href="#about">
                   <span class="nav-link">Sobre</span>
                 </a>
                 <a class="navbar-item" href="#agenda">
-                    <span class="nav-link">Agenda</span>
+                    <span class="nav-link">Cronograma</span>
                 </a>
                 <a class="navbar-item" href="#organization">
                     <span class="nav-link">Organização</span>
@@ -54,7 +87,7 @@
                 </a>
                 <a class="navbar-item" href="#contact">
                     <span class="nav-link">Contato</span>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -102,7 +135,7 @@
 
   <div class="hero is-fullheight is-agenda-container" id="agenda">
     <div class="container" style="margin-top: 50px;">
-      <h1 class="has-text-centered has-text-white is-size-2 wow fadeInUp">agenda do evento</h1>
+      <h1 class="has-text-centered has-text-white is-size-2 wow fadeInUp">Cronograma do evento</h1>
       <!-- sub-menu for date of events -->
       <div class="hero-head" style="margin-top: 60px;">
         <nav class="tabs is-boxed is-radiusless">
@@ -279,7 +312,7 @@
             <p class="has-text-centered has-text-white subtitle has-text-justified-mobile">
               Adquira já seu ingresso para o evento, é totalmente gratuíto, aproveite e escolha uma das nossas palestras e mini-cursos que gostaria de participar.
             </p>
-            <p class="has-text-centered" style="padding-top: 20px;">
+            <p class="has-text-centered" style="padding-top: 20px; margin-top: -50px">
               <button class="button button-participate is-pulse">Adquira seu Ingresso!</button>
             </p>
           </div>
@@ -296,7 +329,7 @@
             <iframe style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.014985912432!2d-35.91875670203007!3d-7.239128825808512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aea0a86bb44fa3%3A0x242ebf4e25b21d44!2sIfpb!5e0!3m2!1spt-BR!2sbr!4v1565924191934!5m2!1spt-BR!2sbr" width="1000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="column is-2"><!-- empty--></div>
-        <div class="column is-4 fadeIn">
+        <div class="column is-4 fadeIn" style="margin-left: 10px !important;">
           <div id="fb-root"></div>
           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0&appId=1868994283135567&autoLogAppEvents=1"></script>
           <div class="fb-page" data-href="https://www.facebook.com/ifpb.campina/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ifpb.campina/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ifpb.campina/">IFPB</a></blockquote></div>
@@ -346,6 +379,7 @@
 <script type="text/javascript" src="./javascript/wow.js"></script>
 <script type="text/javascript" src="./javascript/typewriter.js"></script>
 <script type="text/javascript" src="./javascript/agenda.js"></script>
+<script type="text/javascript" src="./javascript/navbar.js"></script>
 <script type="text/javascript" src="./javascript/scroll.js"></script>
 <script>new WOW().init();</script>
 
