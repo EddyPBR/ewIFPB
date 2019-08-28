@@ -54,15 +54,18 @@ body {
 .is-sub-menu-content {
   padding-top: 10px !important; 
   padding-bottom: 10px !important;
+  margin: auto;
+  text-align: center;
 }
 
 .is-agenda-container {
-  background-color: rgb(142, 68, 238);
+  /* background-color: rgb(142, 68, 238); */
+  background: linear-gradient( rgb(78, 212, 71), rgb(59, 187, 52), rgb(47, 145, 42));
   margin-top: 50px;
 }
 
 .is-hour { 
-  padding-left: 100px;
+  /* padding-left: 100px; */
 }
 
 @media screen and (max-width: 921px) {
@@ -83,12 +86,12 @@ body {
 }
 
 .is-agenda-link:hover{
-  color: rgb(142, 68, 238) !important;
+  color: rgb(47, 145, 42) !important;
 }
 
 .is-agenda-active {
   background-color: rgb(255, 255, 255);
-  color: rgb(142, 68, 238) !important;
+  color: rgb(47, 145, 42) !important;
 }
 
 .ticket-background {
@@ -118,9 +121,24 @@ body {
   color: white;
 }
 
+.button-edital {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  background-color: rgb(30, 118, 201);
+  color: white;
+  transition: all .3s;
+}
+
+.button-edital:hover {
+  background-color: rgb(77, 152, 223);
+  color: white;
+  font-weight: 500;
+  border-color: white !important;
+}
+
 .button-participate:hover {
   background-color: rgba(255, 255, 255, 1);
-  color: rgb(142, 68, 238);
+  color: rgb(47, 145, 42);
   font-weight: 500;
   border-color: white !important;
 }
@@ -143,6 +161,7 @@ body {
 }
 .contact-background {
   background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)), url('../images/lampada.jpg');
+  /* background-image: linear-gradient(rgba(47, 145, 42, .2), rgba(47, 145, 42, .3)), url('../images/lampada.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -236,5 +255,37 @@ body {
   }
   .nav-link-transparent{
     background-color: rgba(0,0,0,0) !important;
+  }
+}
+
+.about-title {
+  font-size: 1.7rem;
+}
+
+.size-event {
+  width: 900px;
+}
+
+@media screen and (max-width: 440px){
+  .size-event {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 441px){
+  .size-event {
+    width: 440px;
+  }
+}
+
+@media screen and (max-width: 762px) and (min-width: 601px){
+  .size-event {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1028px) and (min-width: 763px){
+  .size-event {
+    width: 700px;
   }
 }

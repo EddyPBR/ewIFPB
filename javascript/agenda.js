@@ -8,7 +8,8 @@ function changeContent(number) {
 }
 
 function activeDate(number) {
-  var dateList = document.querySelectorAll('li')
+  var elementList = document.getElementById('agenda-date');
+  var dateList = elementList.querySelectorAll('li')
   dateList.forEach(element => {
     var linkElement = element.querySelector('a');
     linkElement.classList.remove('is-agenda-active')

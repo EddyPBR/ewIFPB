@@ -48,7 +48,7 @@
                 <ul class="navbar-organization">
                   <li>
                     <a class="navbar-item nav-link-transparent has-text-centered" href="#about">
-                      <span class="nav-link">Sobre</span>
+                      <span class="nav-link">Sobre a Maratona</span>
                     </a>
                   </li>
                   <li>
@@ -57,13 +57,13 @@
                   </a>
                   </li>
                   <li>
-                    <a class="navbar-item nav-link-transparent has-text-centered" href="#organization">
-                      <span class="nav-link">Organização</span>
+                    <a class="navbar-item nav-link-transparent has-text-centered" href="#participate">
+                      <span class="nav-link">Como participar</span>
                     </a>
                   </li>
                   <li>
                     <a class="navbar-item nav-link-transparent has-text-centered" href="#ticket">
-                      <span class="nav-link">Ingressos</span>
+                      <span class="nav-link">Inscrições</span>
                     </a>
                   </li>
                   <li>
@@ -117,15 +117,43 @@
 
   <div class="hero is-large" id="about">
     <div class="container" style="padding-top: 60px; padding-bottom: 40px;">
-      <h2 class="title has-text-centered wow fadeInUpBig">Ut fermentum dui non dapibus</h2>
-      <h5 class="subtitle has-text-centered wow fadeInUpBig">felis turpis venenatis elit, ac faucibus tellus lorem at arcu.</h5>
+      <h2 class="title has-text-centered wow fadeInUpBig">Sobre o Evento</h2>
+      <h5 class="subtitle has-text-centered wow fadeInUpBig">A maratona de Empreendedorismo e inovação 2019, é destinada ao público do IFPB-CG</h5>
       <div class="columns is-centered">
         <div class="column is-4 wow fadeInLeft">
           <p class="has-text-centered">
             <img src="./images/customer-service-woman.svg" width="350px"/>
           </p>
+          <h1 class="has-text-centered about-title">Objetivo Geral</h1>
           <p class="has-text-centered">
-            Ut fermentum, dui non dapibus consequat, felis turpis venenatis elit, ac faucibus tellus lorem at arcu. Maecenas at egestas libero, viverra ullamcorper massa.
+            Estimular a cultura empreendedora e de inovação no IFPB - campus Campina Grande
+            preparando os alunos para os desafios do mercado e para o aproveitamento das
+            oportunidades de negócios.
+          </p>
+        </div>
+        <div class="column is-2"><!-- its a empty column --></div>
+        <div class="column is-4  wow fadeInRight">
+          <p class="has-text-centered">
+            <img src="./images/radio-host.svg" width="350px"/>
+          </p>
+          <h1 class="has-text-centered about-title">Desenvolvimento</h1>
+          <p class="has-text-centered">
+            Incentivar a geração de ideias inovadoras no ambiente acadêmico, visando o
+            surgimento de novos empreendimentos que contribuam para o desenvolvimento 
+            socioeconômico e tecnológico da região.
+          </p>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-4 wow fadeInLeft">
+          <p class="has-text-centered">
+            <img src="./images/success-goal-businessman.svg" width="350px"/>
+          </p>
+          <h1 class="has-text-centered about-title">Formação Profissional</h1>
+          <p class="has-text-centered">
+            Complementar a formação teórica e técnica dos alunos, estimulando a realização de
+            atividades de pesquisa aplicada e o desenvolvimento de competências
+            empreendedoras
           </p>
         </div>
         <div class="column is-2"><!-- its a empty column --></div>
@@ -133,8 +161,11 @@
           <p class="has-text-centered">
             <img src="./images/monitor-cash-credit-card.svg" width="350px"/>
           </p>
+          <h1 class="has-text-centered about-title">Premiação</h1>
           <p class="has-text-centered">
-            Ut fermentum, dui non dapibus consequat, felis turpis venenatis elit, ac faucibus tellus lorem at arcu. Maecenas at egestas libero, viverra ullamcorper massa.
+            Reconhecer e PREMIAR as melhores equipes com base nas entregas, no mérito e nas
+            competências desenvolvidas ao longo da maratona de empreendedorismo
+            e inovação 2019
           </p>
         </div>
       </div>
@@ -148,21 +179,15 @@
       <div class="hero-head" style="margin-top: 60px;">
         <nav class="tabs is-boxed is-radiusless">
           <div class="container">
-            <ul id="agenda-date">
-              <li class="wow fadeInLeft">
-                <a class="is-sub-menu is-agenda-link is-agenda-active" onclick="activeDate(0)">Sex, 16/08</a>
+            <ul id="agenda-date" class="size-event">
+              <li class="wow fadeInLeft" style="width: 33.3%">
+                <a class="is-sub-menu is-agenda-link is-agenda-active" onclick="activeDate(0)">Primeira Fase</a>
               </li>
-              <li>
-                <a class="is-sub-menu is-agenda-link" onclick="activeDate(1)">Sab, 17/08</a>
+              <li style="width: 33.3%">
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(1)">Segunda Fase</a>
               </li>
-              <li>
-                <a class="is-sub-menu is-agenda-link" onclick="activeDate(2)">Dom, 18/08</a>
-              </li>
-              <li>
-                <a class="is-sub-menu is-agenda-link" onclick="activeDate(3)">Seg, 19/08</a>
-              </li>
-              <li>
-                <a class="is-sub-menu is-agenda-link" onclick="activeDate(4)">Ter, 20/08</a>
+              <li style="width: 33.3%">
+                <a class="is-sub-menu is-agenda-link" onclick="activeDate(2)">Terceira Fase</a>
               </li>
             </ul>
           </div>
@@ -170,94 +195,61 @@
       </div>
 
       <!-- content of sub-menu -->
-      <div class="box is-radiusless wow fadeInUp" id="event-content" style="margin-bottom: 80px;">
-        <div class="">
+      <div class="box is-radiusless wow fadeInUp size-event" id="event-content" style="margin-bottom: 80px;">
+        <div>
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">18:00</b></p>
+            <p class="is-sub-menu-content has-text-centered">
+              Lançamento do Edital <br>
+              <b class="is-hour">26 de agosto de 2019</b>
+            </p>
           </a>
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">19:00</b></p>
+            <p class="is-sub-menu-content">
+              Inscrições <br />
+              <b class="is-hour">De 28/08 a 15/09 de 2019</b>
+            </p>
           </a>
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">20:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">21:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #0 <b class="is-hour">21:30</b></p>
-          </a>
-        </div>
-
-        <div class="is-hidden">
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">18:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">19:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">20:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">21:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #1 <b class="is-hour">21:30</b></p>
+            <p class="is-sub-menu-content">
+              Homologação das Inscrições<br />
+              <b class="is-hour">16 de setembro de 2019</b>
+            </p>
           </a>
         </div>
 
         <div class="is-hidden">
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">18:00</b></p>
+            <p class="is-sub-menu-content has-text-centered">
+              Oficinas de Capacitação (divulgação do site do evento)<br />
+              <b class="is-hour">De 16 a 20 de setembro de 2019</b>
+            </p>
           </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">19:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">20:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">21:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #2 <b class="is-hour">21:30</b></p>
+          <a class="panel-block has-text-centered">
+            <p class="is-sub-menu-content">
+              Submissão do projeto para pré-classificação (via e-mail)<br />
+              <b class="is-hour">De 23/09 a 13/10 de 2019</b>
+            </p>
           </a>
         </div>
 
         <div class="is-hidden">
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">18:00</b></p>
+            <p class="is-sub-menu-content has-text-centered">
+                Divulgação das equipes finalistas <br>
+              <b class="is-hour">21 de outubro de 2019</b>
+            </p>
           </a>
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">19:00</b></p>
+            <p class="is-sub-menu-content">
+              Apresentação dos projetos das equipes finalistas <br />
+              <b class="is-hour">30 de outubro de 2019</b>
+            </p>
           </a>
           <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">20:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">21:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #3 <b class="is-hour">21:30</b></p>
-          </a>
-        </div>
-
-        <div class="is-hidden">
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">18:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">19:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">20:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">21:00</b></p>
-          </a>
-          <a class="panel-block">
-            <p class="is-sub-menu-content">Evento #4 <b class="is-hour">21:30</b></p>
+            <p class="is-sub-menu-content">
+              Divulgação do resultado final e entrega de premiação <br />
+              <b class="is-hour">20 de Novembro de 2019</b>
+            </p>
           </a>
         </div>
       </div>
@@ -265,7 +257,41 @@
     </div>
   </div>
 
-  <div class="hero is-large" id="organization">
+  <div class="hero is-large" id="participate">
+    <div class="container" style="margin-top: 30px;">
+        <h1 class="has-text-dark has-text-centered is-size-2 wow fadeInUpBig">Como e quem pode participar?</h1>
+        <h3 class="has-text-centered wow fadeInUpBig has-text-justified-mobile" style="padding-left: 10px; padding-right: 10px; padding-top: 10px;">Alunos regularmente matriculados nos cursos técnicos nas modalidades integrados, Proeja, subsequentes, cursos de graduação (tecnologia, licenciatura e bacharelados) e de pós-graduação, organizados em equipes</h3>
+    </div>
+    <div class="columns is-centered" style="margin-bottom: 80px;">
+        <div class="column is-4 wow fadeInLeft">
+          <p class="has-text-centered">
+            <img src="./images/color-palette.svg" width="350px"/>
+          </p>
+          <h1 class="has-text-centered about-title">A equipe</h1>
+          <p class="has-text-centered">
+            Cada equipe deverá ser constituída por no máximo 03 (três) alunos,
+            cada aluno somente poderá participar de uma única equipe.
+          </p>
+        </div>
+        <div class="column is-2"><!-- its a empty column --></div>
+        <div class="column is-4  wow fadeInRight">
+          <p class="has-text-centered">
+            <img src="./images/user-male-add.svg" width="350px"/>
+          </p>
+          <h1 class="has-text-centered about-title">Orientador</h1>
+          <p class="has-text-centered">
+            Cada equipe deverá ter, obrigatoriamente, um orientador do projeto 
+            (servidor efetivo ou substituto com exercício no campus Campina Grande).
+          </p>
+        </div>
+
+      </div>
+      <p class="has-text-centered" style="padding-top: 20px; margin-top: -50px; margin-bottom: 50px;">
+        <a class="button button-edital" href="./edital.pdf" target="_blank">Saiba mais no Edital</a>
+      </p>
+  </div>
+
+  <!-- <div class="hero is-large" id="organization">
     <div class="container" style="margin-top: 30px; margin-bottom: 80px;">
       <h1 class="has-text-dark has-text-centered is-size-2 wow fadeInUpBig">Organização</h1>
       <h3 class="has-text-centered wow fadeInUpBig has-text-justified-mobile" style="padding-left: 10px; padding-right: 10px; padding-top: 10px;">Organizado pelo Instituto Federal de Ciência e Tecnologia da Paraíba - Campus Campina grande. Junto a Cordenação de Administração, contamos com a participação de graduandos, mestres, doutores e especialistas das mais diversas areas, conheça a equipe que torna este evento possível</h3>
@@ -309,7 +335,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="hero is-fullheight ticket-background" id="ticket">
     <div class="hero-body">
@@ -318,10 +344,10 @@
           <div class="column is-8 wow zoomInDown">
             <h2 class="has-text-centered has-text-white title" style="padding-bottom: 10px;">Então, o que voce está esperando?</h2>
             <p class="has-text-centered has-text-white subtitle has-text-justified-mobile">
-              Adquira já seu ingresso para o evento, é totalmente gratuíto, aproveite e escolha uma das nossas palestras e mini-cursos que gostaria de participar.
+               Já tem uma ideia inovadora? então inscreva sua equipe, é totalmente gratuíto! <br>para saber mais, clique no botão logo abaixo.
             </p>
             <p class="has-text-centered" style="padding-top: 20px; margin-top: -50px">
-              <button class="button button-participate is-pulse">Adquira seu Ingresso!</button>
+              <a class="button button-participate is-pulse" href="./edital.pdf" target="_blank">saiba como se inscrever</a>
             </p>
           </div>
         </div>
