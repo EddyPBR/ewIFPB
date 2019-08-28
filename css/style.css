@@ -289,3 +289,7 @@ body {
     width: 700px;
   }
 }
+
+.menu-logo {
+  width: 160px !important;
+}
