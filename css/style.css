@@ -64,6 +64,10 @@ body {
   margin-top: 50px;
 }
 
+.is-cyan-background {
+  background: linear-gradient( rgb(134, 188, 233), rgb(131, 186, 238), rgba(69, 139, 197) );
+}
+
 .is-hour { 
   /* padding-left: 100px; */
 }
@@ -144,7 +148,7 @@ body {
 }
 
 .is-image-profile {
-  border-radius: 50%;
+  border-radius: 30%;
   width: 128px;
 }
 
@@ -205,6 +209,7 @@ body {
   color: rgba(255, 255, 255, 1);
   transition: .5s;
   text-shadow: 0px 0px 10px  rgba(255, 255, 255, .9);
+  font-size: 1.2rem;
 }
 
 .nav-link::after {
