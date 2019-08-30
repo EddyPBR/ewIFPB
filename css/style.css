@@ -2,13 +2,25 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 .header-background {
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2),rgba(0,0,0,.1)), url('../images/header-background.jpg');
+  background-image: radial-gradient(rgba(253, 216, 5, 0.4), rgba(0,0,0,.3),rgba(0,0,0,.5), rgba(0,0,0,.6)), url('../images/header-background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
 }
+
+@media screen and (max-width: 764px){
+  .header-background {
+    background-image: radial-gradient(
+      rgba(253, 216, 5, 0.4), 
+      rgba(0,0,0,.2),
+      rgba(0,0,0,.8)
+    ), url('../images/header-background.jpg');
+  }
+}
+
+
 
 .has-background-banner {
   background-color: rgba(63, 171, 174, .0);
@@ -297,4 +309,10 @@ body {
 
 .menu-logo {
   width: 160px !important;
+}
+
+.ifpb-img {
+  width: 380px;
+  position: relative;
+  top: 22vh;
 }
