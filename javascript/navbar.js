@@ -7,5 +7,6 @@ $(document).ready(function() {
       $(".navbar-burger").toggleClass("is-active");
       $(".navbar-menu").toggleClass("is-active");
 
+      $("#logo").hasClass("is-hidden") ? $("#logo").removeClass("is-hidden") : $("#logo").addClass ("is-hidden");
   });
 });

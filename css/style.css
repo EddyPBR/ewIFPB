@@ -72,12 +72,12 @@ body {
 
 .is-agenda-container {
   /* background-color: rgb(142, 68, 238); */
-  background: linear-gradient( rgb(78, 212, 71), rgb(59, 187, 52), rgb(47, 145, 42));
+  background: radial-gradient( rgb(0, 190, 32), rgb(0, 202, 78), rgb(13, 128, 74));
   margin-top: 50px;
 }
 
 .is-cyan-background {
-  background: linear-gradient( rgb(134, 188, 233), rgb(131, 186, 238), rgba(69, 139, 197) );
+  background: radial-gradient( rgb(59, 226, 226), rgb(37, 189, 189), rgb(69, 114, 197));
 }
 
 .is-hour { 
@@ -315,4 +315,8 @@ body {
   width: 380px;
   position: relative;
   top: 22vh;
+}
+
+.type {
+  text-shadow: 3px 3px 4px rgb(141, 136, 136);
 }
